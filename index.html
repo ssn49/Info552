@@ -1,16 +1,45 @@
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+<style>
+.grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: black;
+  }
+  
+  .grid-item {
+    width: 400px;
+    height: 300px;
+    border: 1px solid #000000;
+    margin: 10px;
+    background-color: #F72585;
+  }
+  
+  .grid-item:nth-child(2) {
+    height: 600px;
+    background-color: #7209B7;
+  }
+  
+  .grid-item:nth-child(3) {
+    background-color: #3A0CA3;
+  }
+  .grid-item:nth-child(4){
+    background-color: #4361EE;
+  }
+</style>
 </head>
 <body>
 <div class="grid-container">
-  <div class="grid-item" id="rectangle" style="display: flex; justify-content: center; align-items: center;">
+  <div class="grid-item" id="rectangle">
   </div>
-  <div class="grid-item" id="rectangle-purple" style="display: flex; justify-content: center; align-items: center;">
+  <div class="grid-item" id="rectangle-purple">
   </div>
-  <div class="grid-item" id="rectangle-blue" style="display: flex; justify-content: center; align-items: center;">
+  <div class="grid-item" id="rectangle-blue">
   </div>
-  <div class="grid-item" id="rectangle-aqua" style="display: flex; justify-content: center; align-items: center;">
+  <div class="grid-item" id="rectangle-aqua">
   </div>
 </div>
 </body>
