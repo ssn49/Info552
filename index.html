@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Combined HTML and CSS</title>
+  <style>
+    body {
+      background-color: black;
+    }
+
+    .purple {
+      background-color: #7209B7;
+      height: 600px;
+      width: 280px;
+      margin: 20px;
+      margin-right: -130px;
+      margin-left: -325px;
+      margin-bottom: 40px;
+    }
+
+    .green {
+      background-color: #2DD8BB;
+      height: 280px;
+      width: 280px;
+      margin: 20px;
+      margin-right: -130px;
+      margin-left: -325px;
+      margin-bottom: 20px;
+    }
+
+    .blue {
+      background-color: #4361EE;
+      height: 280px;
+      width: 280px;
+      margin: 20px;
+      margin-right: -280px;
+      margin-left: -150px;
+      margin-bottom: 40px;
+    }
+
+    .pink {
+      background-color: #F72585;
+      height: 280px;
+      width: 280px;
+      margin: 20px;
+      margin-right: -280px;
+      margin-left: -150px;
+      margin-bottom: 40px;
+    }
+
+    .aqua {
+      background-color: #3A0CA3;
+      height: 280px;
+      width: 280px;
+      margin: 20px;
+      margin-right: -280px;
+      margin-left: -150px;
+      margin-bottom: 20px;
+    }
+
+    .row {
+      width: 280px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .first-column, .second-column {
+      flex: 1;
+    }
+
+    @media (max-width: 992px) {
+      body {
+        width: 768px;
+        height: 1024px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <div class="row">
+      <div class="first-column">
+        <div class="purple"></div>
+        <div class="green"></div>
+      </div>
+      <div class="row">
+        <div class="second-column">
+          <div class="blue"></div>
+          <div class="pink"></div>
+          <div class="aqua"></div>
+        </div>
+    </div>
+  </center>
+</body>
+</html>
