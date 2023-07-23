@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Grid Container</title>
+<style>
+body {
+background-color: black;
+}
+
+.row {
+width: 280px;
+display: flex;
+justify-content: space-around;
+}
+
+.first-column[style*="left"] {
+text-align: left;
+}
+
+.purple {
+background-color: #7209B7;
+height: 900px;
+width: 540px;
+margin: 20px;
+margin-right: 40px;
+margin-left: -820px;  
+}
+
+.darkblue {
+background-color: #3A0CA3;
+height: 440px;
+width: 540px;
+margin: 20px;
+margin-right: 40px;
+margin-left: -820px;  
+}
+
+.blue {
+background-color: #4361EE;
+height: 440px;
+width: 540px;
+margin: 20px;
+margin-left: 350px;
+margin-right: 60px;
+}
+
+.pink {
+background-color: #F72585;
+height: 440px;
+width: 540px;
+margin: 20px;
+margin-left: 350px;
+margin-right: 60px;
+}
+
+.aqua {
+background-color: #4CC9F0;
+height: 440px;
+width: 540px;
+margin: 20px;
+margin-left: 350px;
+margin-right: 60px;
+}
+
+.yellow {
+background-color: #FFFF00;
+height: 440px;
+width: 540px;
+margin: 20px;
+margin-left: 200px;
+margin-right: -0px;  
+}
+
+.green {
+background-color: #2DD8BB;
+height: 900px;
+width: 540px;
+margin: 20px;
+margin-left: 200px;
+margin-right: -0px; 
+}
+</style>
+</head>
+<body>
+<center>
+<div class="row" id="grid-container">
+  <div class="first-column" style="text-align: left;">
+  <div class="purple"></div>
+  <div class="darkblue"></div>
+</div>
+<div class="row">
+  <div class="second-column">
+    <div class="blue"></div>
+    <div class="pink"></div>
+    <div class="aqua"></div>
+  </div>
+  <div class="row">
+    <div class="third-column">
+      <div class="yellow"></div>
+      <div class="green"></div>
+</div>
+</center>
+</body>
+</html>
