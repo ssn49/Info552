@@ -1,104 +1,46 @@
-<!DOCTYPE html>
 <html>
 <head>
-
 <style>
-body {
-background-color: black;
+.grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: black;
 }
 
-.row {
-width: 280px;
-display: flex;
-justify-content: space-around;
+.grid-item {
+  width: 400px;
+  height: 300px;
+  border: 1px solid #000000;
+  margin: 10px;
 }
 
-.first-column[style*="left"] {
-text-align: left;
+.grid-item:nth-child(2) {
+  height: 300px;
+  background-color: #7209B7;
 }
 
-.purple {
-background-color: #7209B7;
-height: 900px;
-width: 600px;
-margin: 20px;
-margin-right: 200px;
-margin-left: -780px;  
+.grid-item:nth-child(3) {
+  background-color: #3A0CA3;
 }
 
-.darkblue {
-background-color: #3A0CA3;
-height: 440px;
-width: 600px;
-margin: 20px;
-margin-right: 200px;
-margin-left: -780px;  
-}
-
-.blue {
-background-color: #4361EE;
-height: 440px;
-width: 600px;
-margin: 20px;
-margin-left: 350px;
-margin-right: 80px;
-}
-
-.pink {
-background-color: #F72585;
-height: 440px;
-width: 600px;
-margin: 20px;
-margin-left: 350px;
-margin-right: 80px;
-}
-
-.aqua {
-background-color: #4CC9F0;
-height: 440px;
-width: 600px;
-margin: 20px;
-margin-left: 350px;
-margin-right: 80px;
-}
-
-.yellow {
-background-color: #FFFF00;
-height: 440px;
-width: 600px;
-margin: 20px;
-margin-left: 120px;
-margin-right: -80px;  
-}
-
-.green {
-background-color: #2DD8BB;
-height: 900px;
-width: 600px;
-margin: 20px;
-margin-left: 120px;
-margin-right: -80px; 
+.grid-item:nth-child(4){
+  background-color: #4361EE;
 }
 </style>
 </head>
 <body>
-<center>
-<div class="row" id="grid-container">
-  <div class="first-column" style="text-align: left;">
-  <div class="purple"></div>
-  <div class="darkblue"></div>
-</div>
-<div class="row">
-  <div class="second-column">
-    <div class="blue"></div>
-    <div class="pink"></div>
-    <div class="aqua"></div>
+<div class="grid-container">
+  <div class="grid-item" id="rectangle" style="display: flex; justify-content: center; align-items: center;">
   </div>
-  <div class="row">
-    <div class="third-column">
-      <div class="yellow"></div>
-      <div class="green"></div>
+  <div class="grid-item" id="rectangle-purple" style="display: flex; justify-content: center; align-items: center;">
+  </div>
+  <div class="grid-item" id="rectangle-blue" style="display: flex; justify-content: center; align-items: center;">
+  </div>
+  <div class="grid-item" id="rectangle-aqua" style="display: flex; justify-content: center; align-items: center;">
+  </div>
 </div>
-</center>
 </body>
 </html>
