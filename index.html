@@ -1,47 +1,104 @@
+<!DOCTYPE html>
 <html>
 <head>
+
 <style>
-    body{
-        background-color: #000000;
-    }
-.grid-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-   background-color: #000000;
-  }
-  
-  .grid-item {
-    width: 1820px;
-    height: 1000px;
-    margin: 10px;
-    background-color: #F72585;
-  }
-  
-  .grid-item:nth-child(2) {
-    height: 1500px;
-    background-color: #7209B7;
-  }
-  
-  .grid-item:nth-child(3) {
-    background-color: #3A0CA3;
-  }
-  .grid-item:nth-child(4){
-    background-color: #4361EE;
-  }
+body {
+background-color: black;
+}
+
+.row {
+width: 280px;
+display: flex;
+justify-content: space-around;
+}
+
+.first-column[style*="left"] {
+text-align: left;
+}
+
+.purple {
+background-color: #7209B7;
+height: 900px;
+width: 600px;
+margin: 20px;
+margin-right: 200px;
+margin-left: -780px;  
+}
+
+.darkblue {
+background-color: #3A0CA3;
+height: 440px;
+width: 600px;
+margin: 20px;
+margin-right: 200px;
+margin-left: -780px;  
+}
+
+.blue {
+background-color: #4361EE;
+height: 440px;
+width: 600px;
+margin: 20px;
+margin-left: 350px;
+margin-right: 80px;
+}
+
+.pink {
+background-color: #F72585;
+height: 440px;
+width: 600px;
+margin: 20px;
+margin-left: 350px;
+margin-right: 80px;
+}
+
+.aqua {
+background-color: #4CC9F0;
+height: 440px;
+width: 600px;
+margin: 20px;
+margin-left: 350px;
+margin-right: 80px;
+}
+
+.yellow {
+background-color: #FFFF00;
+height: 440px;
+width: 600px;
+margin: 20px;
+margin-left: 120px;
+margin-right: -80px;  
+}
+
+.green {
+background-color: #2DD8BB;
+height: 900px;
+width: 600px;
+margin: 20px;
+margin-left: 120px;
+margin-right: -80px; 
+}
 </style>
 </head>
 <body>
-<div class="grid-container">
-  <div class="grid-item" id="rectangle">
-  </div>
-  <div class="grid-item" id="rectangle-purple">
-  </div>
-  <div class="grid-item" id="rectangle-blue">
-  </div>
-  <div class="grid-item" id="rectangle-aqua">
-  </div>
+<center>
+<div class="row" id="grid-container">
+  <div class="first-column" style="text-align: left;">
+  <div class="purple"></div>
+  <div class="darkblue"></div>
 </div>
+<div class="row">
+  <div class="second-column">
+    <div class="blue"></div>
+    <div class="pink"></div>
+    <div class="aqua"></div>
+  </div>
+  <div class="row">
+    <div class="third-column">
+      <div class="yellow"></div>
+      <div class="green"></div>
+</div>
+</center>
 </body>
 </html>
