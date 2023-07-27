@@ -8,10 +8,6 @@
     /* Your existing CSS styles */
     body {
       background-color: #c7c7c7;
-      margin: 0; /* Add this to remove default body margin */
-      min-height: 100vh; /* Set the minimum height of the body to the full viewport height */
-      display: flex;
-      flex-direction: column; /* Create a flex container with column direction */
     }
     
     /* Add new styles for image and paragraph alignment */
@@ -27,45 +23,155 @@
     p {
       text-align: right;
     }
-
+    body {
+      background-color: #c7c7c7;
+    }
+    
     header {
-      /* Add a flex-shrink value to allow the header to shrink if needed */
-      flex-shrink: 0;
       background-color: grey;
       font-family: "coquette", cursive;
       font-size: 30px;
       padding: 5px;
       text-align: center;
+      position: fixed;
+      top: 0%;
       width: fit-content;
       height: 3rem;
     }
 
-    /* Add a new class to push the footer to the bottom */
-    .container {
-      flex: 1; /* Allow the container to grow to fill available space */
+    body{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    header{
+        margin-bottom: 20px;
+    }
+    footer{
+        margin-top: 20px;
+    }
+    
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
       display: flex;
-      flex-direction: column; /* Make the container a flex container with column direction */
+      justify-content: center;
+    }
+    
+    p{
+        font-size: 24px;
+        font-style: normal;
+        text-align: center;
+        margin-top: 20px;
+        text-align: justify;
+    }
+    nav ul li {
+      margin-right: 50px;
+      margin-left: 50px;
+    }
+    
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+    
+    
+    ul {
+        list-style: none;
+        padding: 5;
+        margin: 0;
+        display: flex;
+        justify-content: center;
     }
 
-    /* Add a new class to push the footer to the bottom */
-    .content {
-      flex: 1; /* Allow the content to grow to fill available space */
-      padding-bottom: 20px; /* Add some padding at the bottom to make space for the footer */
+    h2 {
+      padding: 26px;
+      margin-top: 80px;
+      margin-bottom: 10px;
+      background-color: #c7c7c7;
+      text-align: center;
+    }
+    
+    img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    h3{
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: "oswald medium";
+        font-size: 34px;
+        
     }
 
+    h4{
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        font-family: "belinda";
+        font-size: 30px;
+    }
+    
+    .project {
+      margin-bottom: 10px;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    
     footer {
-      /* Remove the fixed position and use margin-top instead */
       background-color: #c7c7c7;
       font-size: 24px;
       padding: 10px;
       text-align: center;
-      margin-top: auto; /* Push the footer to the bottom */
-      margin-left: 50px;
-      margin-right: 50px;
+     bottom: 10%;
+     margin-top: 5%;
+     margin-left: 50px;
+     margin-right: 50px;
+     margin-bottom: 20px;
+      
     }
-
-    /* ... Your other CSS styles ... */
-
+ul li{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+    footer ul li img {
+        float: right;
+        max-width: 100%;
+        height: 35px;
+        width: 35px;
+        align-items: center;
+    }
+    footer {
+      background-color: #c7c7c7;
+      font-size: 24px;
+      padding: 10px;
+      text-align: center;
+     bottom: 2%;
+     margin-top: 5%;
+     margin-left: 50px;
+     margin-right: 50px;
+      
+    }
+ul li{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+    footer ul li img {
+        float: right;
+        max-width: 100%;
+        height: 35px;
+        width: 35px;
+        align-items: center;
+    }
   </style>
 </head>
 <body>
@@ -84,21 +190,19 @@
   </header>
 
   <!-- Your Contact Page content -->
-  <div class="container">
-    <div class="content">
-      <h2>Contact</h2>
-      <h3>Let's Chat</h3>
-      <img src="https://www.iconfinder.com/icons/4202011/email_gmail_mail_logo_social_social_media_icon" alt="Email Icon">
-      <p>Mail me at your@email.com</p>
-      <!-- Other content -->
-    </div>
-  </div>
+  <h2>Contact</h2>
+  <h3>Let's Chat</h3>
+  <img src="https://www.iconfinder.com/icons/4202011/email_gmail_mail_logo_social_social_media_icon" alt="Email Icon">
+  <p>Mail me at your@email.com</p>
+  <!-- Other content -->
 
   <footer>
     <ul> 
-      <li>Sushil S Nisale</li>
-      <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png" alt="Linkedinlogo" style="float: right;"></li>
+        <li>Sushil S Nisale</li>
+        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png" alt="Linkedinlogo" style="float: right;"></li>
+      
     </ul>
+
   </footer>
 </body>
 </html>
