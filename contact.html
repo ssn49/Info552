@@ -5,7 +5,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
   <style>
-   img {
+     body {
+      background-color: #c7c7c7;
+    }
+    
+    header {
+      background-color: grey;
+      font-family: "coquette", cursive;
+      font-size: 30px;
+      padding: 5px;
+      text-align: center;
+      position: fixed;
+      top: 0%;
+      width: fit-content;
+      height: 3rem;
+    }
+
+    body{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    header{
+        margin-bottom: 20px;
+    }
+    footer{
+        margin-top: 20px;
+    }
+    
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+    
+    p{
+        font-size: 24px;
+        font-style: normal;
+        text-align: center;
+        margin-top: 20px;
+        text-align: justify;
+    }
+    nav ul li {
+      margin-right: 50px;
+      margin-left: 50px;
+    }
+    
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+    
+    
+    ul {
+        list-style: none;
+        padding: 5;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    h3{
+        padding: 20px;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 20px;
+        font-family: "oswald medium";
+        font-size: 34px;
+        
+    }
+
+   
+    
+
+    
+    
+    img {
       max-width: 100%;
       height: auto;
       display: block;
@@ -17,8 +95,8 @@
       font-size: 24px;
       padding: 10px;
       text-align: center;
-     bottom: 10%;
-     margin-top: 5%;
+     margin-bottom: 20px;
+     margin-top: 150px;
      margin-left: 50px;
      margin-right: 50px;
       
@@ -34,15 +112,57 @@ ul li{
         width: 35px;
         align-items: center;
     }
+    .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-info,
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Add margin between the two rows */
+.contact-info {
+  margin-bottom: 30px;
+}
+
+.contact-info img,
+.image-container img {
+  margin-right: 20px;
+  height: 80px;
+  width: 140px;
+}
+
+/* Set the width of the Instagram image to 100px */
+.image-container img {
+  width: 70px;
+  height: 70px;
+  margin-left: 0px;
+}
+.contact-info p,
+.image-container p {
+  text-align: left;
+  margin: 0;
+  font-size: 20px;
+  margin-left: 70px;
+}
+
     
-    
+ /* Move "Ping me on Instagram" slightly to the right */
+.image-container p {
+  margin-left: 120px; 
+  margin-right: 40px;
+}
 
   </style>
 </head>
 <body>
-  <!-- Your existing HTML content -->
   <header>
-    <!-- Same header content as in index.html -->
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -57,16 +177,28 @@ ul li{
 
   <div class="container">
     <div class="content">
-     
       <h3>Let's Chat</h3>
-      <div class="image-container">
-        <img src="https://example.com/envelope-mail-icon-vector-illustration.jpg" alt="Email Icon">
-        <p>Mail me at your@email.com</p>
+      <div class="contact-info">
+        <div class="icon">
+          <img src="https://1000logos.net/wp-content/uploads/2021/05/Gmail-logo.png" alt="Email Icon">
+        </div>
+        <div class="info">
+          <p><span>Mail me at sushilnisale@gmail.com</span></p>
+        </div>
       </div>
-     
+      <div class="image-container">
+        <div class="icon">
+          <a href="https://instagram.com/sushilnisale?igshid=MjEwN2IyYWYwYw==" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1025px-Instagram-Icon.png" alt="Instagram">
+          </a>
+        </div>
+        <div class="info">
+          <p><span>Ping me on Instagram</span></p>
+        </div>
+      </div>
     </div>
   </div>
-
+  
   <footer>
     <ul> 
       <li>Sushil S Nisale</li>
