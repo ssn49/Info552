@@ -5,93 +5,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
   <style>
-body {
-  background-color: #c7c7c7;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+    /* Your existing CSS styles */
+    body {
+      background-color: #c7c7c7;
+      margin: 0; /* Add this to remove default body margin */
+      min-height: 100vh; /* Set the minimum height of the body to the full viewport height */
+      display: flex;
+      flex-direction: column; /* Create a flex container with column direction */
+    }
+    
+    /* Add new styles for image and paragraph alignment */
+    h3 {
+      text-align: left;
+    }
 
-header {
-  background-color: grey;
-  font-family: "coquette", cursive;
-  font-size: 30px;
-  padding: 5px;
-  text-align: center;
-  position: fixed;
-  top: 0%;
-  width: fit-content;
-  height: 3rem;
-  margin-bottom: 20px;
-}
+    .image-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-footer {
-  background-color: #c7c7c7;
-  font-size: 24px;
-  padding: 10px;
-  text-align: center;
-  bottom: 10%;
-  margin-top: 5%;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 20px;
-}
+    img {
+      max-height: 60px; /* Adjust the height as needed */
+      margin-right: 10px;
+    }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-}
+    p {
+      text-align: left;
+      margin: 0; /* Remove the default paragraph margin */
+      font-size: 24px;
+    }
 
-nav ul li {
-  margin-right: 50px;
-  margin-left: 50px;
-}
+    header {
+      /* Add a flex-shrink value to allow the header to shrink if needed */
+      flex-shrink: 0;
+      background-color: grey;
+      font-family: "coquette", cursive;
+      font-size: 30px;
+      padding: 5px;
+      text-align: center;
+      width: fit-content;
+      height: 3rem;
+    }
 
-nav ul li a {
-  text-decoration: none;
-  color: #333;
-}
+    /* Add a new class to push the footer to the bottom */
+    .container {
+      flex: 1; /* Allow the container to grow to fill available space */
+      display: flex;
+      flex-direction: column; /* Make the container a flex container with column direction */
+    }
 
-h3 {
-  padding: 20px;
-  text-align: center;
-  margin-bottom: 20px;
-  font-family: "oswald medium";
-  font-size: 34px;
-}
+    /* Add a new class to push the footer to the bottom */
+    .content {
+      flex: 1; /* Allow the content to grow to fill available space */
+      padding-bottom: 20px; /* Add some padding at the bottom to make space for the footer */
+    }
 
-.contact-container {
-  display: flex;
-  justify-content: space-between;
-  max-width: 800px;
-  margin: 0 auto;
-  align-items: center;
-}
+    footer {
+      /* Remove the fixed position and use margin-top instead */
+      background-color: #c7c7c7;
+      font-size: 24px;
+      padding: 10px;
+      text-align: center;
+      margin-top: auto; /* Push the footer to the bottom */
+      margin-left: 50px;
+      margin-right: 50px;
+    }
 
-.contact-info {
-  text-align: right;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-p {
-  font-size: 24px;
-  font-style: normal;
-  margin-top: 20px;
-  text-align: justify;
-}
+    /* ... Your other CSS styles ... */
 
   </style>
 </head>
 <body>
+  <!-- Your existing HTML content -->
   <header>
+    <!-- Same header content as in index.html -->
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -103,18 +91,24 @@ p {
     </nav>
   </header>
 
-  
-  <h3>Let's Chat</h3>
-  <img src="https://www.iconfinder.com/icons/4202011/email_gmail_mail_logo_social_social_media_icon" alt="Email Icon">
-  <p>Mail me at</p>
-  <p>sushilnisale@gmail.com</p>
-  
+  <!-- Your Contact Page content -->
+  <div class="container">
+    <div class="content">
+     
+      <h3>Let's Chat</h3>
+      <div class="image-container">
+        <img src="https://example.com/envelope-mail-icon-vector-illustration.jpg" alt="Email Icon">
+        <p>Mail me at your@email.com</p>
+      </div>
+      <!-- Other content -->
+    </div>
+  </div>
 
   <footer>
     <ul> 
-        <li>Sushil S Nisale</li>
-        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png" alt="Linkedinlogo" style="float: right;"></li>
-      </ul>
+      <li>Sushil S Nisale</li>
+      <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png" alt="Linkedinlogo" style="float: right;"></li>
+    </ul>
   </footer>
 </body>
 </html>
