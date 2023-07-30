@@ -5,74 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
   <style>
-    /* Your existing CSS styles */
-    body {
-      background-color: #c7c7c7;
-      margin: 0; /* Add this to remove default body margin */
-      min-height: 100vh; /* Set the minimum height of the body to the full viewport height */
-      display: flex;
-      flex-direction: column; /* Create a flex container with column direction */
+   img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
     }
     
-    /* Add new styles for image and paragraph alignment */
-    h3 {
-      text-align: left;
-    }
-
-    .image-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    img {
-      max-height: 60px; /* Adjust the height as needed */
-      margin-right: 10px;
-    }
-
-    p {
-      text-align: left;
-      margin: 0; /* Remove the default paragraph margin */
-      font-size: 24px;
-    }
-
-    header {
-      /* Add a flex-shrink value to allow the header to shrink if needed */
-      flex-shrink: 0;
-      background-color: grey;
-      font-family: "coquette", cursive;
-      font-size: 30px;
-      padding: 5px;
-      text-align: center;
-      width: fit-content;
-      height: 3rem;
-    }
-
-    /* Add a new class to push the footer to the bottom */
-    .container {
-      flex: 1; /* Allow the container to grow to fill available space */
-      display: flex;
-      flex-direction: column; /* Make the container a flex container with column direction */
-    }
-
-    /* Add a new class to push the footer to the bottom */
-    .content {
-      flex: 1; /* Allow the content to grow to fill available space */
-      padding-bottom: 20px; /* Add some padding at the bottom to make space for the footer */
-    }
-
     footer {
-      /* Remove the fixed position and use margin-top instead */
       background-color: #c7c7c7;
       font-size: 24px;
       padding: 10px;
       text-align: center;
-      margin-top: auto; /* Push the footer to the bottom */
-      margin-left: 50px;
-      margin-right: 50px;
+     bottom: 10%;
+     margin-top: 5%;
+     margin-left: 50px;
+     margin-right: 50px;
+      
     }
-
-    /* ... Your other CSS styles ... */
+ul li{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+    footer ul li img {
+        float: right;
+        max-width: 100%;
+        height: 35px;
+        width: 35px;
+        align-items: center;
+    }
+    
+    
 
   </style>
 </head>
@@ -91,7 +54,7 @@
     </nav>
   </header>
 
-  <!-- Your Contact Page content -->
+
   <div class="container">
     <div class="content">
      
@@ -100,7 +63,7 @@
         <img src="https://example.com/envelope-mail-icon-vector-illustration.jpg" alt="Email Icon">
         <p>Mail me at your@email.com</p>
       </div>
-      <!-- Other content -->
+     
     </div>
   </div>
 
