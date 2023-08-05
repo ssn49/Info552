@@ -1,0 +1,130 @@
+body {
+    background-color: #c7c7c7;
+    text-align: center; /* Center-align the text in the body */
+    margin: 0 50px; /* Add a 50px margin on the right and left */
+  }
+
+  header {
+    background-color: grey;
+    font-family: "coquette", cursive;
+    font-size: 30px;
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+    top: 0%;
+    width: fit-content;
+    height: 3rem;
+  }
+
+  body {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  header {
+    margin-bottom: 20px;
+  }
+
+  footer {
+    margin-top: 20px;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  p {
+    font-size: 24px;
+    font-style: normal;
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 40px; /* Add a larger gap between the paragraphs */
+  }
+
+  nav ul li {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  ul {
+    list-style: none;
+    padding: 5;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  h2 {
+    padding: 26px;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    background-color: #c7c7c7;
+    text-align: center;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    max-width: 400px; /* Limit the width of the image to fit the column */
+    margin-left: auto; /* Move the image to the right */
+  }
+
+  /* Add gap between image and paragraph using flexbox */
+  .content-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .content-container p {
+    flex: 1; /* Allow the paragraph to take up remaining space */
+  }
+
+  .coming-soon {
+    background-color: #f2f2f2;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Add a gap between "Coming Soon" box and paragraph */
+    width: 150px; /* Set a fixed width for the rectangle */
+    height: 50px; /* Set a fixed height for the rectangle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  footer {
+    background-color: #c7c7c7;
+    font-size: 24px;
+    padding: 10px;
+    text-align: center;
+    bottom: 10%;
+    margin-top: 5%;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  ul li {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  footer ul li img {
+    float: right;
+    max-width: 100%;
+    height: 35px;
+    width: 35px;
+    align-items: center;
+  }
